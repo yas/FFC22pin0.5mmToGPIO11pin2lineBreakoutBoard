@@ -84,25 +84,51 @@ Wire Wire Line
 Wire Wire Line
 	4350 2300 4350 2900
 $Comp
-L Mechanical:MountingHole H1
-U 1 1 5FFC62F7
-P 1850 2200
-F 0 "H1" H 1950 2246 50  0000 L CNN
-F 1 "MountingHole" H 1950 2155 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom" H 1850 2200 50  0001 C CNN
-F 3 "~" H 1850 2200 50  0001 C CNN
-	1    1850 2200
+L Mechanical:MountingHole_Pad H1
+U 1 1 5FFEEFC1
+P 1650 1850
+F 0 "H1" H 1750 1899 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1750 1808 50  0000 L CNN
+F 2 "" H 1650 1850 50  0001 C CNN
+F 3 "~" H 1650 1850 50  0001 C CNN
+	1    1650 1850
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H2
-U 1 1 5FFC6A23
-P 4650 2200
-F 0 "H2" H 4750 2246 50  0000 L CNN
-F 1 "MountingHole" H 4750 2155 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom" H 4650 2200 50  0001 C CNN
-F 3 "~" H 4650 2200 50  0001 C CNN
-	1    4650 2200
+L power:GND #PWR0101
+U 1 1 5FFEFDB2
+P 1650 2050
+F 0 "#PWR0101" H 1650 1800 50  0001 C CNN
+F 1 "GND" H 1655 1877 50  0000 C CNN
+F 2 "" H 1650 2050 50  0001 C CNN
+F 3 "" H 1650 2050 50  0001 C CNN
+	1    1650 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1950 1650 2050
+Wire Wire Line
+	4650 1900 4650 2050
+$Comp
+L power:GND #PWR0102
+U 1 1 5FFF0D62
+P 4650 2050
+F 0 "#PWR0102" H 4650 1800 50  0001 C CNN
+F 1 "GND" H 4655 1877 50  0000 C CNN
+F 2 "" H 4650 2050 50  0001 C CNN
+F 3 "" H 4650 2050 50  0001 C CNN
+	1    4650 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5FFF0D5C
+P 4650 1800
+F 0 "H2" H 4750 1849 50  0000 L CNN
+F 1 "MountingHole_Pad" H 4750 1758 50  0000 L CNN
+F 2 "" H 4650 1800 50  0001 C CNN
+F 3 "~" H 4650 1800 50  0001 C CNN
+	1    4650 1800
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
